@@ -28,6 +28,7 @@ class App extends React.Component {
     // "city", "country" variables grabs whatever is entered into the input
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
+    const temperature = e.target.elements.country.value;
 
     // Create a variable that contains a function makes the call to the url
     const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}us&appid=${API_Key}&units=metric`);
